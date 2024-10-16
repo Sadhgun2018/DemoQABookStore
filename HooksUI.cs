@@ -44,6 +44,17 @@ public void Setup()
   }
 }
 
+[AfterSenario]
+public void TearDown ()
+{
+  if (-driver !=null)
+  {
+    _driver.Quit();
+  }
+    
+}
+
+
 
 
 
