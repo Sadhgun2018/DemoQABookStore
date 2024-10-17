@@ -9,4 +9,11 @@ public class Loginpageobjects
   private readonly IWebElement Alerts => _driver.FindElement(By.Xpath[@class="avatar mx-auto white"][text()= "Alerts"]));
   private readonly IWebElement Widgets => _driver.FindElement(By.Xpath[@class="avatar mx-auto white"][text()= "Widgets"]));
   private readonly IWebElement Interactions => _driver.FindElement(By.Xpath[@class="avatar mx-auto white"][text()= "Interactions"]));
+  private readonly IWebElement FirstNameInput => _driver.FindElement(By.Id("FirstName"));
+  private readonly IWebElement MIddleNameInput => _driver.FindElement(By.Id("MIddleName"));
+  private readonly IWebElement LastNameInput => _driver.FindElement(By.Id("LastName"));
+  private readonly IWebElement GenderInput => _driver.FindElement(By.Id("Gender"));
+  private readonly IWebElement MobileInput => _driver.FindElement(By.Id("Mobile"));
+  private readonly IWebElement emailInput => _driver.FindElement(By.Id("email"));
+  
 }
