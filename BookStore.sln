@@ -3,25 +3,53 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1", "Project1.vbproj", "{8CDD8387-B905-44A8-B5D5-07BB50E05BEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumCSharpFramework.AppHost", "SeleniumCSharpFramework.AppHost\SeleniumCSharpFramework.AppHost.csproj", "{469D07B1-158E-4470-B4F6-2901ED4042BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumCSharpFramework.ServiceDefaults", "SeleniumCSharpFramework.ServiceDefaults\SeleniumCSharpFramework.ServiceDefaults.csproj", "{E7555D95-5428-46CE-9786-0B30630AB6C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functional Test", "Functional Test", "{E2498455-0BE7-4334-BFDE-AAC932795C89}"
+	ProjectSection(SolutionItems) = preProject
+		ApiTests.cs = ApiTests.cs
+		LoginTests.cs = LoginTests.cs
+		FormSubmissionTests.cs = FormSubmissionTests.cs
+		NavigationTests.cs = NavigationTests.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{37089076-D8C5-4D45-921A-A8A67370D304}"
+	ProjectSection(SolutionItems) = preProject
+		BaseTest.cs = BaseTest.cs
+		TestData.cs = TestData.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pages", "Pages", "{5D3310B3-34EF-43E2-9A43-4B865DD1FC7F}"
+	ProjectSection(SolutionItems) = preProject
+		LoginPages.cs = LoginPages.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Driver", "Driver", "{5C2EBF56-9C25-4A55-9522-8F57C31D091E}"
+	ProjectSection(SolutionItems) = preProject
+		WebDriverFactory.cs = WebDriverFactory.cs
+	EndProjectSection
 EndProject
 Global
-  GlobalSection(SolutionNotes) = postSolution
-  EndGlobalSection
-  GlobalSection(SolutionConfiguration) = preSolution
-       ConfigName.0 = Debug
-       ConfigName.1 = Release
-  EndGlobalSection
-  GlobalSection(ProjectDependencies) = postSolution
-  EndGlobalSection
-  GlobalSection(ProjectConfiguration) = postSolution
-   {8CDD8387-B905-44A8-B5D5-07BB50E05BEA}.Debug.ActiveCfg = Debug|x86
-   {8CDD8387-B905-44A8-B5D5-07BB50E05BEA}.Debug.Build.0 = Debug|x86
-   {8CDD8387-B905-44A8-B5D5-07BB50E05BEA}.Release.ActiveCfg = Release|x86
-   {8CDD8387-B905-44A8-B5D5-07BB50E05BEA}.Release.Build.0 = Release|x86
-  EndGlobalSection
-  GlobalSection(ExtensibilityGlobals) = postSolution
-  EndGlobalSection
-  GlobalSection(ExtensibilityAddIns) = postSolution
-  EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{469D07B1-158E-4470-B4F6-2901ED4042BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469D07B1-158E-4470-B4F6-2901ED4042BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469D07B1-158E-4470-B4F6-2901ED4042BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469D07B1-158E-4470-B4F6-2901ED4042BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7555D95-5428-46CE-9786-0B30630AB6C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7555D95-5428-46CE-9786-0B30630AB6C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7555D95-5428-46CE-9786-0B30630AB6C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7555D95-5428-46CE-9786-0B30630AB6C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15A92C55-CC2B-4BD0-A3C4-89354515ABEB}
+	EndGlobalSection
 EndGlobal
