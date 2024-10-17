@@ -24,6 +24,12 @@ public class UIActions
     WebDriverWait Wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
     Wait.until(driver => element.Displayed);
   }
+  public void TakeScreeshot ()
+  {
+    var Screenshot = ((ITakeScreenshot)Driver).GetScreenshot();
+  }
+
+}
 
 public Class APITokenManager
   {
@@ -39,5 +45,3 @@ public Class APIUils
       return JsonConvert.DeserializeObject<T>(responce.Content);
     }
   }
-
-}
