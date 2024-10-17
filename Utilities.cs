@@ -31,14 +31,14 @@ public class UIActions
 
 }
 
-public Class APITokenManager
+public class APITokenManager
   {
     public static string GetAuthToken();
     {
       return "Generated Token";
     }    
   }
-public Class APIUils
+public class APIUils
   {
     public static T DeserializeResponce<T>(IRestResponse response)
     {
