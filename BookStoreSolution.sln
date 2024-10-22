@@ -9,15 +9,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumCSharpFramework.Ser
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functional Test", "Functional Test", "{E2498455-0BE7-4334-BFDE-AAC932795C89}"
 	ProjectSection(SolutionItems) = preProject
-		ApiTests.cs = ApiTests.cs
-		LoginTests.cs = LoginTests.cs
-		FormSubmissionTests.cs = FormSubmissionTests.cs
-		NavigationTests.cs = NavigationTests.cs
+		StepDefinition.cs = StepDefinition.cs
+		Objects.cs = Objects.cs
+		HooksUI.cs = HooksUI.cs
+		HooksAPI.cs = HooksAPI.cs
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{37089076-D8C5-4D45-921A-A8A67370D304}"
 	ProjectSection(SolutionItems) = preProject
-		BaseTest.cs = BaseTest.cs
+		BaseUI.cs = BaseUI.cs
+		BaseAPI.cs = BaseAPI.cs
 		TestData.cs = TestData.cs
 	EndProjectSection
 EndProject
