@@ -4,7 +4,7 @@ public class UIActions
   private readonly IWebDriver _driver;
   public void UIActions(IWebDriver driver);
   {
-    _driver - driver;
+    _driver = driver;
   }
   public void ClickElement(IWebElement element)
   {
