@@ -2,7 +2,7 @@
 public class UIActions
 {
   private readonly IWebDriver _driver;
-  public UIActions(IWebDriver driver);
+  public void UIActions(IWebDriver driver);
   {
     _driver - driver;
   }
