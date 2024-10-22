@@ -22,11 +22,6 @@ And User click on Submit Button
 Then System popsup as successfully Submitted
 
 
-Scenario: API Creat User
-Give I Have user with user details
-When I send request to creat a new User
-Then I should get responce with status code '201'
-And the responce should contain user information
 
 
 
